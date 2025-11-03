@@ -1,3 +1,7 @@
 /data/matches
 /data/raw
 /ffmpeg-8.0-essentials_build
+/training
+src/yolov8x.pt
+src/runs/detect/predict/bundesliga.avi
+src/runs/detect/predict2/bundesliga.avi
