@@ -2,9 +2,12 @@ import numpy as np
 import cv2
 import json
 
+#global variable to choose proper side
+SIDE = 'right'
+
 points = []
 
-img_path = "D:/football_shots_analytics/data/calibrations/h_left.png"
+img_path = f"D:/football_shots_analytics/data/calibrations/h_{SIDE}.png"
 img = cv2.imread(img_path)
 
 img_dis = img.copy()
@@ -33,8 +36,8 @@ cv2.destroyAllWindows()
 print(points)
 
 if len(points) == 10:
-    with open("/data/calibrations/h_left_px_points.json", "w") as f:
-        json.dump({"src_pints": points}, f)
+    with open(f"D:/football_shots_analytics/data/calibrations/h_{SIDE}_px_points.json", "w") as f:
+        json.dump({"src_points": points}, f)
     print("Zebrano wystarczającą ilość punktów")
 else:
     print("Ta ilość punktów nie wystarczy do poprawnej kalibracji obrazu")
