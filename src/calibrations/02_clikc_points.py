@@ -33,7 +33,7 @@ cv2.destroyAllWindows()
 print(points)
 
 if len(points) == 10:
-    with open("D:/football_shots_analytics/data/calibrations/h_left.json", "w") as f:
+    with open("/data/calibrations/h_left_px_points.json", "w") as f:
         json.dump({"src_pints": points}, f)
     print("Zebrano wystarczającą ilość punktów")
 else:
