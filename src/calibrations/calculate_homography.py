@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import cv2
 import json
 
@@ -26,7 +25,7 @@ if len(src_points) != len(dts_points):
     raise ValueError
 
 #Homography
-H = cv2.findHomography(src_points, dts_points)
+H, _ = cv2.findHomography(src_points, dts_points)
 
 
 
