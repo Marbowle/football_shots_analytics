@@ -77,9 +77,10 @@ for (x1, y1), (x2, y2) in zip(dts_points, projected_points):
 plt.legend()
 plt.title("Sprawdzenie odległości punktów od rzeczywistego położenia")
 plt.gca().set_aspect('equal', adjustable='box')
-plt.show()
 plt.savefig(f"D:/football_shots_analytics/data/calibrations/{SIDE}_pitch_validation.png", dpi=300)
+plt.show()
 
+projected_points = projected_points.tolist()
 
 dict = {
     "side": SIDE,
