@@ -3,7 +3,7 @@ import cv2
 import json
 
 #global variable to choose proper side
-SIDE = 'right'
+SIDE = 'left'
 
 points = []
 

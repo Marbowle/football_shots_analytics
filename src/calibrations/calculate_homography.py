@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import json
 
-SIDE = 'right'
+SIDE = 'left'
 
 class NumpyAndTupleEncoder(json.JSONEncoder):
     def default(self, obj):
