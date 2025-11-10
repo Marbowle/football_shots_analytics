@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import math
 
-SIDE = 'left'
+SIDE = 'right'
 base_path = "D:/football_shots_analytics/data/calibrations/"
 src_path = base_path + f"h_{SIDE}_px_points.json"
 dts_path = base_path + f"h_{SIDE}_pitch_points.json"
