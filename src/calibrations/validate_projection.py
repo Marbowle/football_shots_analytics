@@ -20,8 +20,8 @@ print(f"Min value of y: {y_m_min:.2f}")
 print(f"Ilosc pustych wartości: {is_na_value}")
 
 #calculate matrics
-perecent_of_x = ((df['X_m'].between(0,105)).mean()) * 100
-perecent_of_y = ((df['Y_m'].between(0,68)).mean()) * 100
+percent_of_x = ((df['X_m'].between(0,105)).mean()) * 100
+percent_of_y = ((df['Y_m'].between(0,68)).mean()) * 100
 
 mean_object_per_frame = (
     df.groupby(['frame', 'class']).size().groupby('class').mean()
