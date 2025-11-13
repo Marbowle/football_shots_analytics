@@ -4,7 +4,7 @@ import cv2
 #base path to file
 base_path = "D:/football_shots_analytics/"
 
-df = pd.read_csv(base_path+"outputs/clean_detections_bundesliga.csv")
+df = pd.read_csv(base_path+"outputs/merged_tracks_bundesliga.csv")
 
 print(df.head())
 

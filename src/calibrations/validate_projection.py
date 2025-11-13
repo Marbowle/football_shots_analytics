@@ -38,3 +38,11 @@ plt.title("Walidacja poprawności współrzędnych w metrach")
 plt.savefig(base_path + "data/calibrations/validation_pitch.png")
 plt.show()
 
+player_df = df[df['track_id'] == 1]
+fig, ax = plt.subplots(figsize = (10,6))
+ax.plot([0,105,105,0,0], [0,0,68,68,0], color='white')
+ax.scatter(player_df['X_m'], player_df['Y_m'], c='red', s=10, label='Pozycje')
+ax.legend()
+plt.title("Ruch zawondika z track_id = 1")
+plt.savefig(base_path + "data/calibrations/player_move.png")
+plt.show()
