@@ -2,7 +2,7 @@ import pandas as pd
 import cv2
 
 #base path to file
-base_path = "D:/football_shots_analytics/"
+base_path = "//"
 
 df = pd.read_csv(base_path+"outputs/merged_tracks_bundesliga.csv")
 

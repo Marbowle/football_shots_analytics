@@ -15,4 +15,5 @@ values = ['ball', 'referee']
 
 df['role'] = np.select(conditions, values, default='player')
 
-print(df['role'].value_counts())
+
+df.to_csv(path+"detections_with_roles.csv")
