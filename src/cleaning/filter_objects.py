@@ -36,7 +36,6 @@ for track_id in unique_track_id:
 
 df = pd.DataFrame(output_list)
 df =df.sort_values('total_distance', ascending=False)
-print(df.head())
 
 max_track_id = df.loc[df['total_distance'].idxmax(), 'track_id']
 mean_x_track = df.loc[df['track_id'] == max_track_id, 'mean_x'].iloc[0]
@@ -52,5 +51,6 @@ elif 45 <= candidate_2['mean_x'] <= 55 :
     referee_list.append(candidate_2['track_id'])
 else:
     referee_list.append(candidate_3['track_id'])
+
 
 
